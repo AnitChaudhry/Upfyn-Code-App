@@ -1,0 +1,114 @@
+/* White-label Excalidraw: hide branding, clean theme */
+
+/* Hide Excalidraw branding / watermark / welcome screen */
+.excalidraw .main-menu-trigger,
+.excalidraw .welcome-screen-center,
+.excalidraw .welcome-screen-decor,
+.excalidraw .welcome-screen-decor-hint,
+.excalidraw [class*="welcome-screen"],
+.excalidraw a[href*="excalidraw.com"],
+.excalidraw .encrypted-icon {
+  display: none !important;
+}
+
+/* Hide collaboration / lock / share buttons (broad selectors for Excalidraw 0.18+) */
+.excalidraw .collab-button,
+.excalidraw .CollabButton,
+.excalidraw [data-testid="collab-button"],
+.excalidraw button[title="Live collaboration"],
+.excalidraw .share-button,
+.excalidraw button.collab-button,
+.excalidraw [class*="collab"],
+.excalidraw [class*="CollabButton"],
+.excalidraw [class*="share-button"],
+.excalidraw .layer-ui__wrapper__top-right [class*="Island"] > button:last-child {
+  display: none !important;
+}
+
+/* Hide the help/question mark button */
+.excalidraw .HelpButton,
+.excalidraw button[data-testid="help-icon"] {
+  display: none !important;
+}
+
+/* Ensure canvas fills its container completely */
+.excalidraw-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.excalidraw-wrapper .excalidraw {
+  width: 100%;
+  height: 100%;
+}
+
+/* Force Excalidraw to respect container height when inline in a tab */
+.excalidraw-wrapper .excalidraw .excalidraw-container {
+  height: 100% !important;
+}
+
+/* Make sure the toolbar is fully visible and not clipped */
+.excalidraw .App-toolbar-container {
+  z-index: 3;
+}
+
+/* Canvas Block Toolbar — light theme */
+.canvas-block-toolbar {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.canvas-block-toolbar button {
+  color: #555;
+}
+
+.canvas-block-toolbar button:hover {
+  color: #111;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.canvas-block-toolbar .w-5 {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Run button glow animation */
+.canvas-run-btn {
+  box-shadow: 0 2px 12px rgba(var(--primary-rgb, 59 130 246) / 0.3);
+  transition: all 0.2s;
+}
+
+.canvas-run-btn:hover {
+  box-shadow: 0 4px 16px rgba(var(--primary-rgb, 59 130 246) / 0.4);
+  transform: translateY(-1px);
+}
+
+/* Canvas chat panel */
+.canvas-chat-panel {
+  animation: slideUp 0.2s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
