@@ -1,0 +1,31 @@
+"area: agents":
+  - changed-files:
+    - any-glob-to-any-file: ["src/components/Agent*", "src/components/CCAgents*", "src/components/CreateAgent*", "cc_agents/**"]
+
+"area: sessions":
+  - changed-files:
+    - any-glob-to-any-file: ["src/components/Session*", "src/components/ClaudeCodeSession*", "src/components/ProjectList*"]
+
+"area: chat":
+  - changed-files:
+    - any-glob-to-any-file: ["src/components/BYOKChat*", "src/upfyn/components/chat/**"]
+
+"area: mcp":
+  - changed-files:
+    - any-glob-to-any-file: ["src/components/MCP*"]
+
+"area: usage":
+  - changed-files:
+    - any-glob-to-any-file: ["src/components/UsageDashboard*", "src/components/TokenCounter*"]
+
+"area: ui":
+  - changed-files:
+    - any-glob-to-any-file: ["src/components/ui/**", "src/upfyn/components/ui/**"]
+
+"area: i18n":
+  - changed-files:
+    - any-glob-to-any-file: ["src/upfyn/i18n/**"]
+
+"type: ci":
+  - changed-files:
+    - any-glob-to-any-file: [".github/**"]

@@ -3,20 +3,28 @@
 
   <h1>Upfyn Code</h1>
 
+  <p><strong>A powerful GUI toolkit for AI-powered code agents</strong></p>
+  <p><strong>Create custom agents, manage interactive Claude Code sessions, run secure background agents, and more.</strong></p>
+
   <p>
-    <strong>A powerful GUI toolkit for AI-powered code agents</strong>
-  </p>
-  <p>
-    <strong>Create custom agents, manage interactive Claude Code sessions, run secure background agents, and more.</strong>
+    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/releases"><img src="https://img.shields.io/github/v/release/AnitChaudhry/Upfyn-Code-App?style=for-the-badge&color=blue" alt="Release"></a>
+    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/blob/main/LICENSE"><img src="https://img.shields.io/github/license/AnitChaudhry/Upfyn-Code-App?style=for-the-badge&color=green" alt="License"></a>
+    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/issues"><img src="https://img.shields.io/github/issues/AnitChaudhry/Upfyn-Code-App?style=for-the-badge&color=orange" alt="Issues"></a>
+    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/pulls"><img src="https://img.shields.io/github/issues-pr/AnitChaudhry/Upfyn-Code-App?style=for-the-badge&color=purple" alt="PRs"></a>
+    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/stargazers"><img src="https://img.shields.io/github/stars/AnitChaudhry/Upfyn-Code-App?style=for-the-badge&color=yellow" alt="Stars"></a>
   </p>
 
   <p>
-    <a href="#features"><img src="https://img.shields.io/badge/Features-✨-blue?style=for-the-badge" alt="Features"></a>
-    <a href="#installation"><img src="https://img.shields.io/badge/Install-🚀-green?style=for-the-badge" alt="Installation"></a>
-    <a href="#usage"><img src="https://img.shields.io/badge/Usage-📖-purple?style=for-the-badge" alt="Usage"></a>
-    <a href="#development"><img src="https://img.shields.io/badge/Develop-🛠️-orange?style=for-the-badge" alt="Development"></a>
+    <a href="#features">Features</a> &bull;
+    <a href="#installation">Installation</a> &bull;
+    <a href="#usage">Usage</a> &bull;
+    <a href="#development">Development</a> &bull;
+    <a href="#contributing">Contributing</a> &bull;
+    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/discussions">Discussions</a>
   </p>
 </div>
+
+---
 
 > [!NOTE]
 > This project is not affiliated with, endorsed by, or sponsored by Anthropic. Claude is a trademark of Anthropic, PBC. This is an independent developer project using Claude.
@@ -27,20 +35,9 @@
 
 Think of Upfyn Code as your command center for AI-assisted development — bridging the gap between the command-line and a visual experience that makes development more intuitive and productive.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Usage](#usage)
-- [Installation](#installation)
-- [Development](#development)
-- [Security](#security)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
-### Project & Session Management
+### Project and Session Management
 - **Visual Project Browser**: Navigate through all your Claude Code projects in `~/.claude/projects/`
 - **Session History**: View and resume past coding sessions with full context
 - **Smart Search**: Find projects and sessions quickly with built-in search
@@ -64,7 +61,7 @@ Think of Upfyn Code as your command center for AI-assisted development — bridg
 - **Connection Testing**: Verify server connectivity before use
 - **Claude Desktop Import**: Import server configurations from Claude Desktop
 
-### Timeline & Checkpoints
+### Timeline and Checkpoints
 - **Session Versioning**: Create checkpoints at any point in your coding session
 - **Visual Timeline**: Navigate through your session history with a branching timeline
 - **Instant Restore**: Jump back to any checkpoint with one click
@@ -84,61 +81,19 @@ Think of Upfyn Code as your command center for AI-assisted development — bridg
 - Built-in i18n with English, Japanese, Korean, and Chinese (Simplified)
 - Easy to add more languages via the translation system
 
-## Usage
-
-### Getting Started
-
-1. **Launch Upfyn Code**: Open the application after installation
-2. **Login**: Sign in with your cli.upfyn.com credentials
-3. **Welcome Screen**: Choose between CC Agents or Projects
-
-### Managing Projects
-
-```
-Projects -> Select Project -> View Sessions -> Resume or Start New
-```
-
-### Creating Agents
-
-```
-CC Agents -> Create Agent -> Configure -> Execute
-```
-
-1. **Design Your Agent**: Set name, icon, and system prompt
-2. **Configure Model**: Choose between available Claude models
-3. **Set Permissions**: Configure file read/write and network access
-4. **Execute Tasks**: Run your agent on any project
-
-### Tracking Usage
-
-```
-Menu -> Usage Dashboard -> View Analytics
-```
-
-### Working with MCP Servers
-
-```
-Menu -> MCP Manager -> Add Server -> Configure
-```
-
 ## Installation
 
 ### Prerequisites
 
 - **Node.js** (18+ with npm) or **Bun**
-- **Claude Code CLI**: Install from [Claude's official site](https://claude.ai/code)
+- **Claude Code CLI**: Install from [Claude official site](https://claude.ai/code)
 
 ### Quick Start
 
 ```bash
-# Clone the repository
 git clone https://github.com/AnitChaudhry/Upfyn-Code-App.git
 cd Upfyn-Code-App
-
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
 ```
 
@@ -151,17 +106,41 @@ npm run build
 npm run preview
 ```
 
+## Usage
+
+### Getting Started
+
+1. **Launch Upfyn Code**: Start the dev server or open the built application
+2. **Login**: Sign in with your cli.upfyn.com credentials
+3. **Welcome Screen**: Choose between CC Agents or Projects
+
+### Managing Projects
+
+```
+Projects -> Select Project -> View Sessions -> Resume or Start New
+```
+
+### Creating Agents
+
+1. **Design Your Agent**: Set name, icon, and system prompt
+2. **Configure Model**: Choose between available Claude models
+3. **Set Permissions**: Configure file read/write and network access
+4. **Execute Tasks**: Run your agent on any project
+
 ## Development
 
 ### Tech Stack
 
-- **Frontend**: React 18 + TypeScript + Vite 6
-- **UI Framework**: Tailwind CSS v4 + shadcn/ui + Radix UI
-- **State Management**: Zustand + React Context
-- **Code Editor**: CodeMirror 6
-- **Charts**: Recharts
-- **Markdown**: react-markdown + MDX Editor
-- **Internationalization**: i18next
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React 18 + TypeScript |
+| Build | Vite 6 |
+| Styling | Tailwind CSS v4 + shadcn/ui + Radix UI |
+| State | Zustand + React Context |
+| Editor | CodeMirror 6 |
+| Charts | Recharts |
+| Markdown | react-markdown + MDX Editor |
+| i18n | i18next |
 
 ### Project Structure
 
@@ -171,62 +150,85 @@ Upfyn-Code-App/
 │   ├── components/        # UI components
 │   ├── contexts/          # React contexts (auth, tabs, theme)
 │   ├── hooks/             # Custom hooks
-│   ├── lib/               # API client & utilities
-│   ├── upfyn/             # Upfyn-specific components & contexts
+│   ├── lib/               # API client and utilities
+│   ├── upfyn/             # Upfyn-specific components and contexts
 │   ├── stores/            # Zustand stores
 │   ├── services/          # Persistence services
-│   └── assets/            # Static assets
+│   └── assets/            # Static assets (fonts, images)
 ├── shared/                # Shared modules (models, integrations)
-└── cc_agents/             # Pre-built agent definitions
+├── cc_agents/             # Pre-built agent definitions
+└── .github/               # CI, templates, community files
 ```
 
 ### Development Commands
 
 ```bash
-# Start development server with hot reload
-npm run dev
-
-# Type checking
-npm run check
-
-# Production build
-npm run build
+npm run dev       # Start dev server with hot reload
+npm run build     # Production build
+npm run preview   # Preview production build
+npx tsc --noEmit  # Type check
 ```
-
-## Security
-
-Upfyn Code prioritizes your privacy and security:
-
-1. **Process Isolation**: Agents run in separate processes
-2. **Permission Control**: Configure file and network access per agent
-3. **Auth Gate**: Login required before app usage
-4. **JWT Auth**: Secure token-based authentication
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions from developers around the world! Whether it is a bug fix, new feature, translation, or documentation improvement — every contribution matters.
 
-### Areas for Contribution
+**Quick links:**
 
-- Bug fixes and improvements
-- New features and enhancements
-- Documentation improvements
-- UI/UX enhancements
-- Test coverage
+- [Contributing Guide](CONTRIBUTING.md) — Full guide on how to contribute
+- [Good First Issues](https://github.com/AnitChaudhry/Upfyn-Code-App/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) — Great starting points
+- [Help Wanted](https://github.com/AnitChaudhry/Upfyn-Code-App/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) — Issues where we need community help
+- [Discussions](https://github.com/AnitChaudhry/Upfyn-Code-App/discussions) — Ask questions and share ideas
+
+### How to Contribute
+
+```bash
+# Fork -> Clone -> Branch -> Code -> PR
+git clone https://github.com/YOUR_USERNAME/Upfyn-Code-App.git
+cd Upfyn-Code-App
+git checkout -b feature/your-feature-name
+# ... make changes ...
+git push origin feature/your-feature-name
+# Open a PR on GitHub
+```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
+
+## Community
+
+| Resource | Link |
+|----------|------|
+| Bug Reports | [Open an issue](https://github.com/AnitChaudhry/Upfyn-Code-App/issues/new?template=bug_report.yml) |
+| Feature Requests | [Request a feature](https://github.com/AnitChaudhry/Upfyn-Code-App/issues/new?template=feature_request.yml) |
+| Discussions | [Join the conversation](https://github.com/AnitChaudhry/Upfyn-Code-App/discussions) |
+| Security | [Security Policy](SECURITY.md) |
+| Code of Conduct | [Community Standards](CODE_OF_CONDUCT.md) |
+| Changelog | [Release History](CHANGELOG.md) |
+
+## Security
+
+Found a security vulnerability? Please report it responsibly — see our [Security Policy](SECURITY.md) for details. **Do not open a public issue for security vulnerabilities.**
 
 ## License
 
-This project is licensed under the AGPL License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU Affero General Public License v3.0** — see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+**Anit Chaudhry** — Creator and Lead Developer
+
+- GitHub: [@AnitChaudhry](https://github.com/AnitChaudhry)
+- Website: [upfyn.com](https://upfyn.com)
 
 ## Acknowledgments
 
 - [Claude](https://claude.ai) by Anthropic
-- Built with React, Vite, and Tailwind CSS
+- Built with [React](https://react.dev), [Vite](https://vitejs.dev), and [Tailwind CSS](https://tailwindcss.com)
+- UI components from [shadcn/ui](https://ui.shadcn.com) and [Radix UI](https://www.radix-ui.com)
 
 ---
 
 <div align="center">
-  <p>
-    <strong>Made with care by <a href="https://upfyn.com">Upfyn</a></strong>
-  </p>
+  <p><strong>Made with care by <a href="https://upfyn.com">Upfyn</a></strong></p>
+  <p><sub>If you find this project useful, please consider giving it a star!</sub></p>
 </div>

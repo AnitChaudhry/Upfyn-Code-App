@@ -1,0 +1,20 @@
+title: "[Idea]: "
+labels:
+  - "idea"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share your idea with the community! We love creative suggestions.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your Idea
+      description: Describe your idea in detail.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Why this would be useful
+      description: Explain the use case or problem this idea addresses.

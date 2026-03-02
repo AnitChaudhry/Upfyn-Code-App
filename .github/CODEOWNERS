@@ -1,0 +1,28 @@
+# Upfyn Code — Code Owners
+# These owners will be automatically requested for review on PRs
+
+# Global owner — all files
+* @AnitChaudhry
+
+# Frontend core
+/src/components/ @AnitChaudhry
+/src/contexts/ @AnitChaudhry
+/src/hooks/ @AnitChaudhry
+/src/lib/ @AnitChaudhry
+
+# Upfyn-specific modules
+/src/upfyn/ @AnitChaudhry
+
+# Configuration files
+/*.json @AnitChaudhry
+/*.ts @AnitChaudhry
+/vite.config.ts @AnitChaudhry
+
+# CI/CD and community
+/.github/ @AnitChaudhry
+
+# Shared modules
+/shared/ @AnitChaudhry
+
+# Agent definitions
+/cc_agents/ @AnitChaudhry

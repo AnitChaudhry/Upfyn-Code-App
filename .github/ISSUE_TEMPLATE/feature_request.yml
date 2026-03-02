@@ -1,0 +1,70 @@
+name: Feature Request
+description: Suggest a new feature or improvement for Upfyn Code
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+assignees:
+  - AnitChaudhry
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We love hearing ideas from the community! Please describe your feature request below.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation
+      description: What problem does this feature solve? Is it related to a frustration?
+      placeholder: "I'm always frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the solution or feature you'd like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you considered any alternative solutions or workarounds?
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Feature area
+      description: Which part of the app does this relate to?
+      options:
+        - Projects & Sessions
+        - CC Agents
+        - Usage Dashboard
+        - MCP Server Management
+        - BYOK Chat
+        - Timeline & Checkpoints
+        - CLAUDE.md Editor
+        - UI/UX
+        - Performance
+        - Accessibility
+        - Internationalization (i18n)
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this to you?
+      options:
+        - Nice to have
+        - Would significantly improve my workflow
+        - Critical — blocking my use of the tool
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Any mockups, screenshots, or references that would help us understand your request.

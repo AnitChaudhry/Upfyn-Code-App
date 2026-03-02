@@ -1,0 +1,77 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in Upfyn Code
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - AnitChaudhry
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the information below to help us investigate.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: "When I click on X, Y happens instead of Z..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step-by-step instructions to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain the problem.
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser / Environment
+      description: Where are you running Upfyn Code?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Desktop App (Windows)
+        - Desktop App (macOS)
+        - Desktop App (Linux)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Upfyn Code Version
+      description: "Which version are you using? (check package.json or About screen)"
+      placeholder: "e.g., 1.0.0"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Any other context about the problem — error logs, console output, etc.
