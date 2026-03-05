@@ -1,234 +1,168 @@
+
 <div align="center">
-  <img src="src/assets/nfo/upfyn-logo.png" alt="Upfyn Code Logo" width="120" height="120">
+  <img src="https://raw.githubusercontent.com/AnitChaudhry/Upfyn-Code-App/main/icon.png" alt="Upfyn Code" width="140" height="140">
 
   <h1>Upfyn Code</h1>
 
-  <p><strong>A powerful GUI toolkit for AI-powered code agents</strong></p>
-  <p><strong>Create custom agents, manage interactive Claude Code sessions, run secure background agents, and more.</strong></p>
-
   <p>
-    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/releases"><img src="https://img.shields.io/github/v/release/AnitChaudhry/Upfyn-Code-App?style=for-the-badge&color=blue" alt="Release"></a>
-    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/blob/main/LICENSE"><img src="https://img.shields.io/github/license/AnitChaudhry/Upfyn-Code-App?style=for-the-badge&color=green" alt="License"></a>
-    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/issues"><img src="https://img.shields.io/github/issues/AnitChaudhry/Upfyn-Code-App?style=for-the-badge&color=orange" alt="Issues"></a>
-    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/pulls"><img src="https://img.shields.io/github/issues-pr/AnitChaudhry/Upfyn-Code-App?style=for-the-badge&color=purple" alt="PRs"></a>
-    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/stargazers"><img src="https://img.shields.io/github/stars/AnitChaudhry/Upfyn-Code-App?style=for-the-badge&color=yellow" alt="Stars"></a>
+    <strong>Your AI just learned to think before it spends.</strong>
+  </p>
+  <p>
+    The first desktop AI development studio with a built-in intelligence layer that understands what you're asking <em>before</em> it calls the model — so you get faster responses, lower costs, and smarter output without changing how you work.
   </p>
 
   <p>
-    <a href="#features">Features</a> &bull;
-    <a href="#installation">Installation</a> &bull;
-    <a href="#usage">Usage</a> &bull;
-    <a href="#development">Development</a> &bull;
-    <a href="#contributing">Contributing</a> &bull;
-    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/discussions">Discussions</a>
+    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/releases/latest"><img src="https://img.shields.io/badge/Download%20Now-Latest%20Release-blue?style=for-the-badge&logo=windows" alt="Download"></a>
   </p>
+
+  <p>
+    <img src="https://img.shields.io/github/v/release/AnitChaudhry/Upfyn-Code-App?style=flat-square&label=version" alt="Version">
+    <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-0078D6?style=flat-square&logo=windows" alt="Platform">
+    <img src="https://img.shields.io/github/downloads/AnitChaudhry/Upfyn-Code-App/total?style=flat-square&label=downloads&color=green" alt="Downloads">
+    <img src="https://img.shields.io/github/release-date/AnitChaudhry/Upfyn-Code-App?style=flat-square&label=updated" alt="Release Date">
+  </p>
+
+  <p><em>A product by <a href="https://thinqmesh.com">Thinqmesh Technologies</a></em></p>
 </div>
 
 ---
 
-> [!NOTE]
-> This project is not affiliated with, endorsed by, or sponsored by Anthropic. Claude is a trademark of Anthropic, PBC. This is an independent developer project using Claude.
+## The Problem Nobody Talks About
 
-## Overview
+Every AI coding tool today does the same thing: takes your prompt, throws the entire kitchen sink at the most expensive model, burns through tokens, and hopes for the best.
 
-**Upfyn Code** is a powerful application that transforms how you interact with AI code agents. It provides a beautiful GUI for managing your Claude Code sessions, creating custom agents, tracking usage, and much more.
+Ask it to fix a typo? It loads every tool, fires up extended reasoning, and bills you like you asked it to rewrite your entire codebase. Ask a simple question? Same cost as asking it to architect a distributed system.
 
-Think of Upfyn Code as your command center for AI-assisted development — bridging the gap between the command-line and a visual experience that makes development more intuitive and productive.
+**There was no intelligence between you and the AI.**
 
-## Features
+**Until Upfyn Code.**
 
-### Project and Session Management
-- **Visual Project Browser**: Navigate through all your Claude Code projects in `~/.claude/projects/`
-- **Session History**: View and resume past coding sessions with full context
-- **Smart Search**: Find projects and sessions quickly with built-in search
-- **Session Insights**: See first messages, timestamps, and session metadata at a glance
+---
 
-### CC Agents
-- **Custom AI Agents**: Create specialized agents with custom system prompts and behaviors
-- **Agent Library**: Build a collection of purpose-built agents for different tasks
-- **Background Execution**: Run agents in separate processes for non-blocking operations
-- **Execution History**: Track all agent runs with detailed logs and performance metrics
+## What Makes This Different
 
-### Usage Analytics Dashboard
-- **Cost Tracking**: Monitor your Claude API usage and costs in real-time
-- **Token Analytics**: Detailed breakdown by model, project, and time period
-- **Visual Charts**: Beautiful charts showing usage trends and patterns
-- **Export Data**: Export usage data for accounting and analysis
+### The Upfyn Intelligence Layer
 
-### MCP Server Management
-- **Server Registry**: Manage Model Context Protocol servers from a central UI
-- **Easy Configuration**: Add servers via UI or import from existing configs
-- **Connection Testing**: Verify server connectivity before use
-- **Claude Desktop Import**: Import server configurations from Claude Desktop
+Before your prompt ever reaches the AI, Upfyn Code's proprietary intelligence engine:
 
-### Timeline and Checkpoints
-- **Session Versioning**: Create checkpoints at any point in your coding session
-- **Visual Timeline**: Navigate through your session history with a branching timeline
-- **Instant Restore**: Jump back to any checkpoint with one click
-- **Fork Sessions**: Create new branches from existing checkpoints
+- **Understands your intent** — Instantly knows if you're asking a question, fixing a typo, or designing a system. No extra AI call needed.
+- **Picks the right model** — Simple tasks use fast, affordable models. Complex tasks get the heavy hitters. You stop overpaying.
+- **Loads only what's needed** — Every session is lean. No wasted tokens on tools you don't need for that specific task.
+- **Controls the thinking budget** — Deep reasoning is expensive. It only activates when your query genuinely needs it.
+- **Caps your spend** — Set per-query budget limits from the settings. A greeting will never accidentally cost you $2.
 
-### CLAUDE.md Management
-- **Built-in Editor**: Edit CLAUDE.md files directly within the app
-- **Live Preview**: See your markdown rendered in real-time
-- **Project Scanner**: Find all CLAUDE.md files in your projects
+**Same work. Dramatically less cost. Noticeably faster.**
 
-### BYOK Chat
-- **Bring Your Own Key**: Use your own API keys from 8+ providers
-- **Multi-provider**: Anthropic, OpenAI, OpenRouter, Google, Groq, DeepSeek, Mistral, XAI
-- **Streaming**: Real-time streaming chat responses
+No VS Code extension, no web assistant, no CLI wrapper does this. They all treat every prompt the same. Upfyn Code treats every prompt as what it actually is.
 
-### Multi-language Support
-- Built-in i18n with English, Japanese, Korean, and Chinese (Simplified)
-- Easy to add more languages via the translation system
+---
 
-## Installation
+## Everything You Need. One App.
 
-### Prerequisites
+### AI Chat — Multiple Minds, One Window
+Multiple AI sessions in tabs. Full history. Resume anytime. Each project gets its own isolated workspace — like having separate AI assistants for each client.
 
-- **Node.js** (18+ with npm) or **Bun**
-- **Claude Code CLI**: Install from [Claude official site](https://claude.ai/code)
+**Agent Mode**: Create specialized AI agents — a security reviewer, a performance optimizer, a documentation writer — each with its own expertise and rules. Activate any agent in any chat with one click.
 
-### Quick Start
+### Visual Canvas — Your AI Army
+This isn't a chatbot. This is a **command center**.
 
-```bash
-git clone https://github.com/AnitChaudhry/Upfyn-Code-App.git
-cd Upfyn-Code-App
-npm install
-npm run dev
-```
+Drop blocks onto a canvas. Each block is an independent AI agent. Connect them. Hit "Run All" and watch **8 agents work simultaneously** — one researches, another codes, a third reviews, a fourth writes docs. All in parallel.
 
-The app will be available at `http://localhost:1420`
+**16 block types**: Chat, Prompt, Memo, Deep Research, Image, Slides, Table, List, Interactive App, Notes, PDF, YouTube, Web Pages, Inputs, Actions, Frames.
 
-### Production Build
+This is how you turn a 4-hour task into a 15-minute orchestration.
 
-```bash
-npm run build
-npm run preview
-```
+### Browser Automation — AI With Eyes
+The AI gets a browser. It navigates, clicks, types, scrolls, takes screenshots — and you watch it all happen live. Fill forms, scrape dashboards, test web apps. It sees what you see.
 
-## Usage
+### Workflow Engine — Automate the Boring Parts
+Say *"Lint, test, build, deploy, notify me"* in plain English. Upfyn Code generates a multi-step workflow with conditions, loops, parallel execution, retries, and scheduling. Run it once or run it on a timer.
 
-### Getting Started
+### Custom Agents — Build Your Dream Team
 
-1. **Launch Upfyn Code**: Start the dev server or open the built application
-2. **Login**: Sign in with your cli.upfyn.com credentials
-3. **Welcome Screen**: Choose between CC Agents or Projects
+| Autonomy Level | What Happens |
+|---------------|-------------|
+| **Full Auto** | Agent executes everything without asking. Maximum velocity. |
+| **Plan First** | Agent shows the plan. You approve, then it executes. |
+| **Ask Each Step** | Agent confirms every action. Maximum control. |
 
-### Managing Projects
+Upload a `.md` instruction file and the agent follows it like a playbook. A "React Specialist" that enforces your patterns. A "Database Migrator" that follows your checklist. Your rules, your agents.
 
-```
-Projects -> Select Project -> View Sessions -> Resume or Start New
-```
+### Built-In Dev Tools
+Stop switching windows:
+- **Terminal** — PowerShell, CMD, Bash, WSL, all inside the app
+- **Code Editor** — Syntax highlighting, multi-file tabs
+- **File Tree** — Visual project navigator
+- **Git Panel** — Diffs, staging, commit
+- **Web Browser** — Docs and previews without leaving the app
 
-### Creating Agents
+### Bring Your Own Everything
+- **Your API key** — Use your own key from 8+ AI providers
+- **Your endpoint** — Point at any compatible API (corporate proxy, cloud provider, local setup)
+- **Your tools** — Connect external tools via MCP protocol. Database queries, web search, file management — anything
+- **Your integrations** — Gmail, Slack, GitHub, Google Drive via OAuth
 
-1. **Design Your Agent**: Set name, icon, and system prompt
-2. **Configure Model**: Choose between available Claude models
-3. **Set Permissions**: Configure file read/write and network access
-4. **Execute Tasks**: Run your agent on any project
+---
 
-## Development
+## Who Is This For?
 
-### Tech Stack
+| You are... | Upfyn Code gives you... |
+|-----------|------------------------|
+| **Solo developer** | An AI team that works in parallel on your canvas |
+| **Tech lead** | Custom agents that enforce your team's standards |
+| **Freelancer** | Budget controls so AI costs don't eat your margins |
+| **Agency** | Multi-project tabs with isolated sessions per client |
+| **Student** | A free, local-first AI assistant for learning |
+| **Enterprise** | API overrides, proxy support, zero data leakage |
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | React 18 + TypeScript |
-| Build | Vite 6 |
-| Styling | Tailwind CSS v4 + shadcn/ui + Radix UI |
-| State | Zustand + React Context |
-| Editor | CodeMirror 6 |
-| Charts | Recharts |
-| Markdown | react-markdown + MDX Editor |
-| i18n | i18next |
+---
 
-### Project Structure
+## Security & Privacy
 
-```
-Upfyn-Code-App/
-├── src/                   # React frontend
-│   ├── components/        # UI components
-│   ├── contexts/          # React contexts (auth, tabs, theme)
-│   ├── hooks/             # Custom hooks
-│   ├── lib/               # API client and utilities
-│   ├── upfyn/             # Upfyn-specific components and contexts
-│   ├── stores/            # Zustand stores
-│   ├── services/          # Persistence services
-│   └── assets/            # Static assets (fonts, images)
-├── shared/                # Shared modules (models, integrations)
-├── cc_agents/             # Pre-built agent definitions
-└── .github/               # CI, templates, community files
-```
+Upfyn Code is **not a cloud service**. It runs entirely on your machine.
 
-### Development Commands
+- Your code never leaves your computer unless you send it to an AI
+- All data stored locally — sessions, agents, canvases, workflows
+- Each agent runs in isolation
+- You control access for every agent
+- Cryptographically signed updates
+- **No telemetry on your source code. Period.**
 
-```bash
-npm run dev       # Start dev server with hot reload
-npm run build     # Production build
-npm run preview   # Preview production build
-npx tsc --noEmit  # Type check
-```
+---
 
-## Contributing
+## Download Now
 
-We welcome contributions from developers around the world! Whether it is a bug fix, new feature, translation, or documentation improvement — every contribution matters.
+<div align="center">
 
-**Quick links:**
+### [Download Latest Release](https://github.com/AnitChaudhry/Upfyn-Code-App/releases/latest)
 
-- [Contributing Guide](CONTRIBUTING.md) — Full guide on how to contribute
-- [Good First Issues](https://github.com/AnitChaudhry/Upfyn-Code-App/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) — Great starting points
-- [Help Wanted](https://github.com/AnitChaudhry/Upfyn-Code-App/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) — Issues where we need community help
-- [Discussions](https://github.com/AnitChaudhry/Upfyn-Code-App/discussions) — Ask questions and share ideas
+| File | Best for |
+|------|----------|
+| `.exe` installer | **Most users** — guided setup |
+| `.msi` installer | Enterprise deployment |
+| `.zip` archive | Portable, no install needed |
 
-### How to Contribute
+**Requirements:** Windows 10/11 (64-bit) · Internet connection · [Claude CLI](https://claude.ai/code) or your own API key
 
-```bash
-# Fork -> Clone -> Branch -> Code -> PR
-git clone https://github.com/YOUR_USERNAME/Upfyn-Code-App.git
-cd Upfyn-Code-App
-git checkout -b feature/your-feature-name
-# ... make changes ...
-git push origin feature/your-feature-name
-# Open a PR on GitHub
-```
+</div>
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
+---
 
-## Community
+## Changelog
 
-| Resource | Link |
-|----------|------|
-| Bug Reports | [Open an issue](https://github.com/AnitChaudhry/Upfyn-Code-App/issues/new?template=bug_report.yml) |
-| Feature Requests | [Request a feature](https://github.com/AnitChaudhry/Upfyn-Code-App/issues/new?template=feature_request.yml) |
-| Discussions | [Join the conversation](https://github.com/AnitChaudhry/Upfyn-Code-App/discussions) |
-| Security | [Security Policy](SECURITY.md) |
-| Code of Conduct | [Community Standards](CODE_OF_CONDUCT.md) |
-| Changelog | [Release History](CHANGELOG.md) |
+See the [Releases page](https://github.com/AnitChaudhry/Upfyn-Code-App/releases) for version history and release notes.
 
-## Security
+---
 
-Found a security vulnerability? Please report it responsibly — see our [Security Policy](SECURITY.md) for details. **Do not open a public issue for security vulnerabilities.**
+## Feedback & Support
 
-## License
-
-This project is licensed under the **GNU Affero General Public License v3.0** — see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-**Anit Chaudhry** — Creator and Lead Developer
-
-- GitHub: [@AnitChaudhry](https://github.com/AnitChaudhry)
-- Website: [upfyn.com](https://upfyn.com)
-
-## Acknowledgments
-
-- [Claude](https://claude.ai) by Anthropic
-- Built with [React](https://react.dev), [Vite](https://vitejs.dev), and [Tailwind CSS](https://tailwindcss.com)
-- UI components from [shadcn/ui](https://ui.shadcn.com) and [Radix UI](https://www.radix-ui.com)
+- [Report an issue](https://github.com/AnitChaudhry/Upfyn-Code-App/issues)
+- [Website](https://cli.upfyn.com)
 
 ---
 
 <div align="center">
-  <p><strong>Made with care by <a href="https://upfyn.com">Upfyn</a></strong></p>
-  <p><sub>If you find this project useful, please consider giving it a star!</sub></p>
+  <p><strong>Built by <a href="https://thinqmesh.com">Thinqmesh Technologies</a></strong></p>
+  <p><sub>Upfyn Code is a product of Thinqmesh Technologies. Not affiliated with Anthropic. Claude is a trademark of Anthropic, PBC.</sub></p>
 </div>
