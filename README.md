@@ -12,7 +12,7 @@
   </p>
 
   <p>
-    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/releases/latest"><img src="https://img.shields.io/badge/Download%20Now-Latest%20Release-blue?style=for-the-badge&logo=windows" alt="Download"></a>
+    <a href="https://github.com/AnitChaudhry/Upfyn-Code-App/tree/main/downloads"><img src="https://img.shields.io/badge/Download%20Now-Latest%20Release-blue?style=for-the-badge&logo=windows" alt="Download"></a>
   </p>
 
   <p>
@@ -135,13 +135,13 @@ Upfyn Code is **not a cloud service**. It runs entirely on your machine.
 
 <div align="center">
 
-### [Download Latest Release](https://github.com/AnitChaudhry/Upfyn-Code-App/releases/latest)
+### Download v3.7.0
 
-| File | Best for |
+| File | Download |
 |------|----------|
-| `.exe` installer | **Most users** — guided setup |
-| `.msi` installer | Enterprise deployment |
-| `.zip` archive | Portable, no install needed |
+| **Installer (.exe)** — Most users | [Upfyn Code_3.7.0_x64-setup.exe](https://github.com/AnitChaudhry/Upfyn-Code-App/raw/main/downloads/Upfyn%20Code_3.7.0_x64-setup.exe) |
+| **MSI Installer** — Enterprise | [Upfyn Code_3.7.0_x64_en-US.msi](https://github.com/AnitChaudhry/Upfyn-Code-App/raw/main/downloads/Upfyn%20Code_3.7.0_x64_en-US.msi) |
+| **Portable (.zip)** — No install | [Upfyn Code_3.7.0_x64-setup.nsis.zip](https://github.com/AnitChaudhry/Upfyn-Code-App/raw/main/downloads/Upfyn%20Code_3.7.0_x64-setup.nsis.zip) |
 
 **Requirements:** Windows 10/11 (64-bit) · Internet connection · [Claude CLI](https://claude.ai/code) or your own API key
 
